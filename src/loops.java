@@ -113,20 +113,40 @@ public class loops {
 
 
 //        EXERCISE 6 - Write a program that asks the user for input until the user inputs 0. After this, the program prints the average of the numbers. The number zero does not need to be counted to the average. You may assume that the user inputs at least one number.
-        double sum = 0;
-        double count = 0;
+//        double sum = 0;
+//        double count = 0;
+//        while (true){
+//            System.out.println("Enter the number:(0-exit) " );
+//            int num = scanner.nextInt();
+//            if (num!=0){
+//                sum += num;
+//                count += 1;
+//            } else
+//                break;
+//        }
+//        if (sum>0){
+//            System.out.println("The average of the input is " + sum/count);
+//        } else
+//            System.out.println("You haven't provided any number!");
+
+
+//        EXERCISE 7 - Write a program that asks the user for input until the user inputs 0. After this, the program prints the average of the positive numbers (numbers that are greater than zero).//If no positive number is inputted, the program prints "Cannot calculate the average"
+        float count = 0;
+        float sum = 0;
         while (true){
-            System.out.println("Enter the number:(0-exit) " );
-            int num = scanner.nextInt();
-            if (num!=0){
-                sum += num;
+            System.out.println("Give a number: ");
+            float num = scanner.nextFloat();
+            if (num>0){
                 count += 1;
-            } else
+                sum += num;
+            } else if (num==0) {
                 break;
+            } else
+                continue;
         }
         if (sum>0){
-            System.out.println("The average of the input is " + sum/count);
+            System.out.println("The average is " + sum/count);
         } else
-            System.out.println("You haven't provided any number!");
+            System.out.println("Cannot calculate the average");
     }
 }
