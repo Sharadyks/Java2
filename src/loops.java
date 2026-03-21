@@ -51,19 +51,32 @@ public class loops {
 
 //        USING CONTINUE KEYWORD - EXERCISE
 //        Write a program that asks the user for numbers. If the number is negative (smaller than zero), the program prints for user "Unsuitable number" and asks the user for a new number. If the number is zero, the program exits the loop. If the number is positive, the program prints the number to the power of two.
+//        while (true){
+//            System.out.println("Provide a number please");
+//            double number = scanner.nextDouble();
+//            if (number<0){
+//                System.out.println("Unsuitable number!");
+//                continue;
+//            } else if (number==0) {
+//                break;
+//            } else {
+//                System.out.println(Math.pow(number, 2));
+//            }
+//        }
+
+
+//        EXERCISE-Write a program that reads values from the user until they input a 0. After this, the program prints the total number of inputted values. The zero that's used to exit the loop should not be included in the total number count.
+        int count = 0;
         while (true){
-            System.out.println("Provide a number please");
-            String number = scanner.nextLine();
-            if (Integer.valueOf(number)<0){
-                System.out.println("Unsuitable number!");
+            System.out.println("Enter a number: ");
+            int num = scanner.nextInt();
+            if (num!=0){
+                count +=1;
                 continue;
-            } else if (Integer.valueOf(number)==0) {
+            } else{
                 break;
-            } else {
-                System.out.println(Math.pow(Integer.parseInt(number), 2));
             }
         }
-
-
+        System.out.println("Total input values are: " + count);
     }
 }
