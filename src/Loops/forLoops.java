@@ -31,7 +31,7 @@ public class forLoops {
 //        }
 
 
-//        EXERCISE - Implement a program, which calculates the sum 1+2+3+...+n where n is given as user input.
+//        EXERCISE 4 - Implement a program, which calculates the sum 1+2+3+...+n where n is given as user input.
 //        System.out.print("Give a number: ");
 //        int num = input.nextInt();
 //        int sum = 0;
@@ -41,6 +41,23 @@ public class forLoops {
 //        System.out.println(sum);
 
 
+//      EXERCISE 5 - Implement a program which calculates the sum of a closed interval, and prints it. Expect the user to write the smaller number first and then the larger number.You can base your solution to this exercise to the solution of last exercise — add the functionality for the user to enter the starting point as well.
+//        System.out.println("In this program we will add values of a closed interval");
+//        System.out.print("Enter the First number: ");
+//        int num1 = input.nextInt();
+//        System.out.print("Enter the Last number: ");
+//        int num2 = input.nextInt();
+//        int sum = 0;
 //
+//        for (int i = num1; i<=num2; i++){
+//            sum += i;
+//        }
+//        System.out.println("The sum is: " + sum);
+
+
+//        EXERCISE 6 - Implement a program which calculates the factorial of a number given by the user.
+//        System.out.println("Welcome to the factorial calculator!");
+//        System.out.print();
+
     }
 }
