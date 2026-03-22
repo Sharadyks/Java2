@@ -72,6 +72,28 @@ public class forLoops {
 //        System.out.println("The facorial of " + num + " is : " + fact);
 
 
+        System.out.print("Write numbers, negative numbers are invalid: ");
+        int sum = 0;
+        int validNumbers = 0;
+        int invalidNumbers = 0;
 
+        while (true) {
+            int num = Integer.valueOf(input.nextLine());
+
+            if (num == 0) {
+                System.out.println("Sum of valid numbers: " + sum);
+                System.out.println("Valid numbers: " + validNumbers);
+                System.out.println("Invalid numbers: " + invalidNumbers);
+                break;
+            }
+
+            if (num < 0) {
+                invalidNumbers++;
+                continue;
+            }
+
+            sum += num;
+            validNumbers++;
+        }
     }
 }
