@@ -57,7 +57,21 @@ public class forLoops {
 
 //        EXERCISE 6 - Implement a program which calculates the factorial of a number given by the user.
 //        System.out.println("Welcome to the factorial calculator!");
-//        System.out.print();
+//        System.out.print("Enter the number: ");
+//        int num = input.nextInt();
+//        int a = 1;
+//        int fact = 1;
+//        for (int i =1; i<=num; i++){
+//            fact = fact*i;
+//        }
+//        when i = 1 , fact = 1*1 = 1
+//        when i = 2 , fact = 1*2 = 2
+//        when i = 3 , fact = 2*3 = 6
+//        when i = 4 , fact = 6*4 = 24
+//        when i = 5 , fact = 24*5= 120
+//        System.out.println("The facorial of " + num + " is : " + fact);
+
+
 
     }
 }
