@@ -9,7 +9,8 @@ public class lists {
 //        exercise1();
 //        exercise2();
 //        exercise3();
-
+//        exercise4();
+        exercise5();
     }
 
 
@@ -76,4 +77,23 @@ public class lists {
             System.out.println(list1.get(i));
         }
    }
+
+//   EXERCISE 5- The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.Continue developing the program so that it finds the greatest number in the list and prints its value after reading all the numbers. The programming should work in the following manner.
+    static void exercise5(){
+        while (true){
+            int num = input.nextInt();
+            if (num==-1){
+                break;
+            }
+            list1.add(num);
+        }
+        int greatest = list1.get(0);
+        for (int i=1; i<list1.size(); i++){
+           if (list1.get(i)>greatest){
+               greatest = list1.get(i);
+           }
+        }
+        System.out.println("The greatest number is :" + greatest);
+
+    }
 }
