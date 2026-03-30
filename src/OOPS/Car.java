@@ -7,9 +7,9 @@ public class Car {
 
     float maxSpeed;
 
-    Float currentFuelInLitres;
+    float currentFuelInLitres;
 
-    public void start(){
+    public Car start(){
         if (currentFuelInLitres==0){
             System.out.println("There is no fuel in vehicle!");
         } else if (currentFuelInLitres<5) {
@@ -17,6 +17,7 @@ public class Car {
         } else {
             System.out.println("Welcome to Maruti Suzuki Fronx");
         }
+        return this;
     }
 
     public void drive(){
@@ -30,4 +31,7 @@ public class Car {
         return currentFuelInLitres;
     }
 
+    public void setCurrentFuelInLitres(Float currentFuelInLitres) {
+        this.currentFuelInLitres = currentFuelInLitres;
+    }
 }
