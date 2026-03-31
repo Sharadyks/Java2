@@ -7,7 +7,7 @@ public class Car {
 
     float maxSpeed;
 
-    float currentFuelInLitres;
+    static float currentFuelInLitres = 50;
 
     public Car start(){
         if (currentFuelInLitres==0){
@@ -20,18 +20,21 @@ public class Car {
         return this;
     }
 
-    public void drive(){
+    public Car drive(){
         System.out.println("Car is driving");
         currentFuelInLitres--;
+        return this;
     }
-    public void addfuel(float fuel){
+    public Car addfuel(float fuel){
         currentFuelInLitres += fuel;
+        return this;
     }
     public float getfuel(){
         return currentFuelInLitres;
     }
 
-    public void setCurrentFuelInLitres(Float currentFuelInLitres) {
-        this.currentFuelInLitres = currentFuelInLitres;
-    }
+//    public Car setCurrentFuelInLitres(Float currentFuelInLitres) {
+//        this.currentFuelInLitres = currentFuelInLitres;
+//        return this;
+//    }
 }
