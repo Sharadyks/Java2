@@ -1,6 +1,15 @@
-package OOPS;
+package OOPS.Practice_Files;
 
 public class Driver {
+
+    String name;
+    String License;
+    static int minAge = 18;
+    int age;
+    public boolean isValid(){
+        return this.age >= minAge;
+    }
+
     public static void main(String[] args) {
 //        Car fronx = new Car();
 //        fronx.setCurrentFuelInLitres(2f);
@@ -25,14 +34,16 @@ public class Driver {
 
         Car innova = new Car();
         Car fortuner = new Car();
-
 //        innova.addfuel(7);
 //        fortuner.addfuel(23);
-
 //        innova.start().drive().addfuel(6).drive();
 //        System.out.println(innova.getfuel());
 //        Car.currentFuelInLitres = 35;
-        innova.drive();
-        System.out.println(innova.getfuel());
+//        innova.drive();
+//        System.out.println(innova.getfuel());
+
+        Driver driver = new Driver();
+        driver.age = 20;
+        System.out.println(driver.isValid());
     }
 }

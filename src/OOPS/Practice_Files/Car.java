@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Practice_Files;
 
 public class Car {
     int noOfSeats;
