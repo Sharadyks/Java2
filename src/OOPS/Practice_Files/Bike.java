@@ -15,15 +15,29 @@ public class Bike {
         this.cc = cc;
     }
 
+//    @Override
+//    public String toString() {
+//        return "Bike{" +
+//                "model='" + model + '\'' +
+//                ", company='" + company + '\'' +
+//                ", yearOfManufacturing=" + yearOfManufacturing +
+//                ", vehicleNumber='" + vehicleNumber + '\'' +
+//                ", cc=" + cc +
+//                '}';
+//    }
+//    Above, during every concatenation of strings, every new string object is created in the heap which makes the use of memory exponentially increase.
+//    For solving this, we can use Stringbuild in toString method. Below is the toString method using Stringbuilder class.
+
+
     @Override
     public String toString() {
-        return "Bike{" +  // During every concatenation of strings, every new string object is created in the heap which makes the use of memory exponentially increase.
-                "model='" + model + '\'' +
-                ", company='" + company + '\'' +
-                ", yearOfManufacturing=" + yearOfManufacturing +
-                ", vehicleNumber='" + vehicleNumber + '\'' +
-                ", cc=" + cc +
-                '}';
+        StringBuilder info = new StringBuilder("Car{ ");
+        info.append(" model: '").append(model).append('\''); // Here we can do chaining because append method return the object itself.
+        info.append(" company: '").append(company).append('\'');
+        info.append(" yearOfManufacturing: '").append(yearOfManufacturing).append('\'');
+        info.append(" vehicleNumber:").append(vehicleNumber);
+        info.append(" cc: ").append(cc).append(" }");
+        return info.toString();
     }
 
     public static void main(String[] args) {
