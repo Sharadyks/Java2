@@ -6,14 +6,17 @@ public class Book {
     private long noOfPages;
     private String dateOfPublication;
 
-    public Book(String author,String title){
+//    Here if want to make changes in the fields in the same package only we can give it default modifier
+    void setAuthor(String author){
         this.author = author;
+    }
+    void setTitle(String title){
         this.title = title;
     }
-    public void setNoOfPages(long noOfPages){
+    void setNoOfPages(long noOfPages){
         this.noOfPages = noOfPages;
     }
-    public void setDateOfPublication(String dateOfPublication){
+    void setDateOfPublication(String dateOfPublication){
         this.dateOfPublication = dateOfPublication;
     }
 
