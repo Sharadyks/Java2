@@ -6,7 +6,6 @@ public class Vehicle {
     public String insuranceID;
     public int fuelLevelinLitres;
 
-
     public void start(){
         if (fuelLevelinLitres==0){
             System.out.println("The vehicle is ran out of fuel! please refuel it");
