@@ -12,7 +12,7 @@ public class Person {
         if (!(obj instanceof Person)){
             return false;
         }
-            Person person = (Person) obj;
+             Person person = (Person) obj;
         return person.name.equals(name) &&
                 person.age==age &&
                 person.id.equals(id);

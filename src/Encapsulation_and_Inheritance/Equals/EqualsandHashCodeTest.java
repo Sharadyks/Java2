@@ -10,6 +10,7 @@ public class EqualsandHashCodeTest {
 //        System.out.println(person1.equals(person2)); // Now after writing override method equals it is comparing the value of objects
         System.out.println(person1.hashCode());
         System.out.println(person2.hashCode());
+
     }
 
 
