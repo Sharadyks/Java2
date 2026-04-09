@@ -1,10 +1,16 @@
 package Abstraction_and_Polymorphism.Abstraction;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Transport {
     private int noOfTyres;
 
+    public abstract void makeStartSound();
     public Vehicle(int noOfTyres) {
         this.noOfTyres = noOfTyres;
+    }
+
+    @Override
+    public void getSetGo() {
+        System.out.println("Welcome, Enjoy your ride");
     }
 
     public int getNoOfTyres() {
