@@ -5,11 +5,15 @@ public class TestTransportation {
         Car c = new Car();
         Vehicle v = new Vehicle();
         Plane p = new Plane();
+        Vehicle veh = new Car();
 //        castTest(v);
         castTest(c);
-        castTest(p);
+//        castTest(p);
     }
     private static void castTest(Vehicle veh){
-        veh.start();
+//        veh.start();
+        Car car = (Car)veh;
+//        car.start();
+        ((Car) veh).noOfDoors();
     }
 }
